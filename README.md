@@ -1,206 +1,60 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/NJK_cPkH)
-# Template for Capstone
-이 레파지토리는 학생들이 캡스톤 프로젝트 결과물을 위한 레파지토리 생성시에 참고할 내용들을 담고 있습니다.
-1. 레파지토리 생성
-2. 레파지토리 구성
-3. 레파지토리 제출 
-4. README.md 가이드라인
-5. README.md 작성팁
-
----
-
-## 1. 레파지토리 생성
-- [https://classroom.github.com/a/NJK_cPkH](https://classroom.github.com/a/NJK_cPkH)
-- 위 Github Classroom 링크에 접속해 본인 조의 github 레파지토리를 생성하세요.
-<img src="https://github.com/user-attachments/assets/b5a7f34a-e146-4253-b57d-672737a75a50" alt="깃헙 클래스룸 레포 생성" width="600" />
-
-- 레포지토리 생성 시 팀명은 `TEAM-{조 번호}` 형식으로 생성하세요.
-- 예를 들어, 2024년도 3조의 팀명은 `TEAM-03` 입니다.
-- 이 경우 `Capstone2024-TEAM-03`이란 이름으로 레파지토리가 생성됩니다.
-
----
-
-## 2. 레파지토리 구성
-- 레파지토리 내에 README.md 파일 생성하고 아래의 가이드라인과 작성팁을 참고하여 README.md 파일을 작성하세요. (이 레파지토리의 SAMPLE_README.md 참조)
-- 레파지토리 내에 docs 디렉토리를 생성하고 docs 디렉토리 내에는 과제 수행 하면서 작성한 각종 보고서, 발표자료를 올려둡니다. (이 레파지토리의 docs 디렉토리 참조)
-- 그 밖에 레파지토리의 폴더 구성은 과제 결과물에 따라 자유롭게 구성하되 가급적 코드의 목적이나 기능에 따라 디렉토리를 나누어 구성하세요.
-
----
-
-## 3. 레파지토리 제출 
-
-- **`[주의]` 레파지토리 제출**은 해당 레파지토리의 ownership을 **학과 계정**으로 넘기는 것이므로 되돌릴 수 없습니다.
-- **레파지토리 제출** 전, 더 이상 수정 사항이 없는지 다시 한번 확인하세요.
-- github 레파지토리에서 Settings > General > Danger zone > Transfer 클릭
-  <img src="https://github.com/user-attachments/assets/cb2361d4-e07e-4b5d-9116-aa80dddd8a8b" alt="소유주 변경 경로" width="500" />
-  
-- [ Specify an organization or username ]에 'PNUCSE'를 입력하고 확인 메세지를 입력하세요.
-  <img src="https://github.com/user-attachments/assets/7c63955d-dcfe-4ac3-bdb6-7d2620575f3a" alt="소유주 변경" width="400" />
-
----
-
-## 4. README.md 가이드 라인
-- README 파일 작성시에 아래의 5가지 항목의 내용은 필수적으로 포함해야 합니다.
-- 아래의 5가지 항목이외에 프로젝트의 이해를 돕기 위한 내용을 추가해도 됩니다.
-- SAMPLE_README.md 이 단순한 형태의 예제이니 참고하세요.
-
-```markdown
 ### 1. 프로젝트 소개
 #### 1.1. 배경 및 필요성
-> 프로젝트를 실행하게 된 배경 및 필요성을 작성하세요.
+ > 재난은 언제나 예측할 수 없고, 실제 상황에서 적절한 대처를 하는 것은 쉽지 않다. 이에 따라, 재난 발생 시 효과적으로 대응하는 능력을 길러주는 교육이 필수적이다. 특히 화재와 같은 긴급 상황에서의 대처 능력은 생명을 구하는 중요한 요소로 작용한다. 전통적인 교육 방식은 주로 이론적인 교육에 치우쳐 있어 실제 상황에 적응하는 데 한계가 있다. 이를 보완하기 위해 최근에는 가상현실(VR) 기술을 이용한 교육이 주목받고 있다.
+ VR 기술은 사용자가 실제와 유사한 재난 상황을 체험할 수 있게 함으로써, 안전 대처 능력을 더욱 효과적으로 향상하는데 기여할 수 있다.
 
 #### 1.2. 목표 및 주요 내용
-> 프로젝트의 목표 및 주요 내용을 작성하세요.
+ > 본 과제의 목표는 **체험자와 감독관 간의 실시간 상호작용**을 통해 맞춤형 재난 교육을 제공하는 데 있다. 주요 내용으로는 감독관이 체험자의 행동을 실시간으로 모니터링하고, 필요할 때 즉각적인 피드백을 제공함으로써, 기존 교육의 한계를 넘어서는 보다 **효과적인 재난 대응 교육**을 구현할 수 있다. 이러한 시스템은 체험자가 재난 상황에서 적절한 행동을 즉각적으로 습득할 수 있도록 도와줄 뿐만 아니라, **실질적인 대응 능력을 향상**시키는 데 기여할 것이다.
+
 
 ### 2. 상세설계
 #### 2.1. 시스템 구성도
-> 시스템 구성도(infra, front, back등의 node 간의 관계)의 사진을 삽입하세요.
+> ![시스템구성도1](https://github.com/user-attachments/assets/679f4759-5650-43d8-be30-ccc873808984)
+
+ 시스템은 기본적으로 서버 역할을 하는 PC 감독관과 클라이언트 역할의 VR 체험자로 이루어져 있다.
+
+> ![시스템구성도PC](https://github.com/user-attachments/assets/dab159a3-b42f-42dc-a197-3eeb8eb7d6f8)
+ 먼저 VR 체험자의 경우 VR 장비를 통해 접속한다. 이후 첫 UI를 통해 VR 체험자 버튼을 선택하게 되면 대기화면으로 들어감과 동시에 서버의 연결을 기다린다. 이후 감독관이 접속하여 서버를 생성하면 클라이언트로 접속하게 되고 감독관이 체험자의 환경 세팅을 끝내고 나면 VR 체험이 시작된다.
+
+> ![시스템구성도VR](https://github.com/user-attachments/assets/b705509a-dd45-4f1a-bd1d-e53c78a7eb1e)
+ PC 감독관의 경우는 개인 Laptop을 통해 접속한다. 이후 첫 UI에서 PC 감독관 버튼을 선택하게 되면 서버가 시작되고 체험자 환경 세팅 화면으로 진입한다. 세팅 화면에서는 체험자가 접속하면 세팅이 동작하며 세팅이 끝나고 시작 버튼을 누르면 VR 체험자도 체험을 시작하고, 실시간 모니터링을 시작한다.
+
 
 #### 2.1. 사용 기술
-> 스택 별(backend, frontend, designer등) 사용한 기술 및 버전을 작성하세요.
-> 
-> ex) React.Js - React14, Node.js - v20.0.2
+> * 개발 도구: Unity 2022.3.35f1, Netcode for GameObjects, XRInteraction Toolkit, Visual Studio 2022 Community
+> * 프로그램 언어: C#
+> * 버전 관리: Unity Version Control
 
 ### 3. 설치 및 사용 방법
-> 제품을 설치하기 위헤 필요한 소프트웨어 및 설치 방법을 작성하세요.
->
-> 제품을 설치하고 난 후, 실행 할 수 있는 방법을 작성하세요.
+> 1. 실행.exe 파일을 2개 다운로드 후 실행. 
+> 2. 시작 화면에서 파일 하나에서는 VR체험자로, 다른 하나에서는 PC감독관으로 접속.
+![시작화면](https://github.com/user-attachments/assets/1aa145e8-3cea-4cb7-a7c0-e27a6700453d)
+> 3. 감독관 화면에서 플레이어 세팅 후 시뮬레이션 시작.
+![세팅화면](https://github.com/user-attachments/assets/dc3fc507-4f95-4a74-bd28-00bc865986bc)
+
+
 
 ### 4. 소개 및 시연 영상
-> 프로젝트에 대한 소개와 시연 영상을 넣으세요.
+#### 4.1 소개
+
+
+#### 4.2 시연 영상
+> [![영상 이름](유튜브 영상 썸네일 URL)](유튜브 영상 URL)
+[![부산대학교 정보컴퓨터공학부 소개](http://img.youtube.com/vi/zh_gQ_lmLqE/0.jpg)](https://www.youtube.com/watch?v=zh_gQ_lmLqE)    
+
 
 ### 5. 팀 소개
-> 팀원 소개 & 구성원 별 역할 분담 & 간단한 연락처를 작성하세요.
-```
-
-## 5. README.md 작성팁 
-* 마크다운 언어를 이용해 README.md 파일을 작성할 때 참고할 수 있는 마크다운 언어 문법을 공유합니다.  
-* 다양한 예제와 보다 자세한 문법은 [이 문서](https://www.markdownguide.org/basic-syntax/)를 참고하세요.
-
-### 5.1. 헤더 Header
-```
-# This is a Header 1
-## This is a Header 2
-### This is a Header 3
-#### This is a Header 4
-##### This is a Header 5
-###### This is a Header 6
-####### This is a Header 7 은 지원되지 않습니다.
-```
-<br />
-
-### 5.2. 인용문 BlockQuote
-```
-> This is a first blockqute.
->	> This is a second blockqute.
->	>	> This is a third blockqute.
-```
-> This is a first blockqute.
->	> This is a second blockqute.
->	>	> This is a third blockqute.
-<br />
-
-### 5.3. 목록 List
-* **Ordered List**
-```
-1. first
-2. second
-3. third  
-```
-1. first
-2. second
-3. third
-<br />
-
-* **Unordered List**
-```
-* 하나
-  * 둘
-
-+ 하나
-  + 둘
-
-- 하나
-  - 둘
-```
-* 하나
-  * 둘
-
-+ 하나
-  + 둘
-
-- 하나
-  - 둘
-<br />
-
-### 5.4. 코드 CodeBlock
-* 코드 블럭 이용 '``'
-```
-여러줄 주석 "```" 이용
-"```
-#include <stdio.h>
-int main(void){
-  printf("Hello world!");
-  return 0;
-}
-```"
-
-단어 주석 "`" 이용
-"`Hello world`"
-
-* 큰 따움표(") 없이 사용하세요.
-``` 
-<br />
-
-### 5.5. 링크 Link
-```
-[Title](link)
-[부산대학교 정보컴퓨터공학부](https://cse.pusan.ac.kr/cse/index..do)
-
-<link>
-<https://cse.pusan.ac.kr/cse/index..do>
-``` 
-[부산대학교 정보컴퓨터공학부](https://cse.pusan.ac.kr/cse/index..do)
-
-<https://cse.pusan.ac.kr/cse/index..do>
-<br />
-
-### 5.6. 강조 Highlighting
-```
-*single asterisks*
-_single underscores_
-**double asterisks**
-__double underscores__
-~~cancelline~~
-```
-*single asterisks* <br />
-_single underscores_ <br />
-**double asterisks** <br />
-__double underscores__ <br />
-~~cancelline~~  <br />
-<br />
-
-### 5.7. 이미지 Image
-```
-<img src="image URL" width="600px" title="Title" alt="Alt text"></img>
-![Alt text](image URL "Optional title")
-```
-- 웹에서 작성한다면 README.md 내용 안으로 이미지를 드래그 앤 드롭하면 이미지가 생성됩니다.
-- 웹이 아닌 로컬에서 작성한다면, github issue에 이미지를 드래그 앤 드롭하여 image url 을 얻을 수 있습니다. (URL만 복사하고 issue는 제출 안 함.)
-  <img src="https://github.com/user-attachments/assets/0fe3bff1-7a2b-4df3-b230-cac4ef5f6d0b" alt="이슈에 image 올림" width="600" />
-  <img src="https://github.com/user-attachments/assets/251c6d42-b36b-4ad4-9cfa-fa2cc67a9a50" alt="image url 복사" width="600" />
-
-
-### 5.8. 유튜브 영상 추가
-```markdown
-[![영상 이름](유튜브 영상 썸네일 URL)](유튜브 영상 URL)
-[![부산대학교 정보컴퓨터공학부 소개](http://img.youtube.com/vi/zh_gQ_lmLqE/0.jpg)](https://www.youtube.com/watch?v=zh_gQ_lmLqE)    
-```
-[![부산대학교 정보컴퓨터공학부 소개](http://img.youtube.com/vi/zh_gQ_lmLqE/0.jpg)](https://www.youtube.com/watch?v=zh_gQ_lmLqE)    
-
-- 이때 유튜브 영상 썸네일 URL은 유투브 영상 URL로부터 다음과 같이 얻을 수 있습니다.
-
-- `Youtube URL`: https://www.youtube.com/watch?v={동영상 ID}
-- `Youtube Thumbnail URL`: http://img.youtube.com/vi/{동영상 ID}/0.jpg 
-- 예를 들어, https://www.youtube.com/watch?v=zh_gQ_lmLqE 라고 하면 썸네일의 주소는 http://img.youtube.com/vi/zh_gQ_lmLqE/0.jpg 이다.
-
+  * 이종민
+    * 기기 간 네트워크 연결 및 세팅(Netcode)
+    * 1:1 의사소통 기법 구현(미니맵, 마커)
+    * UI 디자인 및 최적화
+    * 음성 채팅 구현(Vivox)\
+  * 노윤정
+    * VR 작동 환경 구현
+    * 가상환경 속 상호작용 구현
+    * 가상환경 수정 및 보완(벽, 바닥, 계단 등)
+  * 장승우
+    * 시나리오 구성
+    * ui구성 및 동작
+    * 네트워크 보조 (체험자 따라가는 카메라)
+    * 환경세팅(체험자 위치이동, 물건 배치)
