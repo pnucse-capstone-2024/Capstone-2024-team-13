@@ -20,7 +20,7 @@
  PC 감독관의 경우는 개인 Laptop을 통해 접속한다. 이후 첫 UI에서 PC 감독관 버튼을 선택하게 되면 서버가 시작되고 체험자 환경 세팅 화면으로 진입한다. 세팅 화면에서는 체험자가 접속하면 세팅이 동작하며 세팅이 끝나고 시작 버튼을 누르면 VR 체험자도 체험을 시작하고, 실시간 모니터링을 시작한다.
 
 
-#### 2.1. 사용 기술
+#### 2.2. 사용 기술
 > * 개발 도구: Unity 2022.3.35f1, Netcode for GameObjects, XRInteraction Toolkit, Visual Studio 2022 Community
 > * 프로그램 언어: C#
 > * 버전 관리: Unity Version Control
