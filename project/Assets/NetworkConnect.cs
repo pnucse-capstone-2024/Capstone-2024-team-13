@@ -9,6 +9,7 @@ public class NetworkConnect : NetworkBehaviour
     public GameObject StartCanvas;
     public GameObject SettingCanvas;
     public GameObject WaitingCanvas;
+    public GameObject EnterIPCanvas;
     //public GameObject PCManager;
     public GameObject VRPlayer;
     public GameObject NoVrPlayer;
@@ -29,16 +30,24 @@ public class NetworkConnect : NetworkBehaviour
         LoadPCSceneServerRPC(NetworkManager.Singleton.LocalClientId); // Host는 PC 씬을 로드
     }
 
+    public void EnterIP()
+    {
+        StartCanvas.SetActive(false);
+        EnterIPCanvas.SetActive(true);
+    }
+
     // 클라이언트가 될 때 실행
     public void StartClient()
     {
         NetworkManager.Singleton.StartClient();
         StartCoroutine(WaitForClientConnection());
         
-        StartCanvas.SetActive(false);
+        EnterIPCanvas.SetActive(false);
         WaitingCanvas.SetActive(true);
         //playerCamera.targetDisplay = 0;
     }
+
+
 
     // 클라이언트가 연결될 때까지 대기
     private IEnumerator WaitForClientConnection()

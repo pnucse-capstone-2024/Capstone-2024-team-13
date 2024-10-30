@@ -5,6 +5,8 @@ ScriptsOnlyBuild:
     - ChangeCanvas
     - ContinuousHorizontalRotation
     - MiniMapClickHandler
+    - NetworkAddressSetter
+    - NetworkAddressSetter_2
     - NetworkConnect
     - NetworkObjectManager
     - NetworkPlayer
@@ -311,7 +313,7 @@ ScriptsOnlyBuild:
     methodName: ShowManagerCanvas
   - assembly: Assembly-CSharp
     fullTypeName: NetworkConnect
-    methodName: StartClient
+    methodName: EnterIP
   - assembly: Assembly-CSharp
     fullTypeName: CameraControl
     methodName: SetCameraNearClip
@@ -327,6 +329,9 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: CameraControl
     methodName: SetCameraNearClip
+  - assembly: Assembly-CSharp
+    fullTypeName: NetworkConnect
+    methodName: StartClient
   - assembly: Assembly-CSharp
     fullTypeName: StairTrigger
     methodName: YesButtonPress
@@ -659,6 +664,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 32646}
     - Class: 114
       Script: {instanceID: 32730}
+    - Class: 114
+      Script: {instanceID: 47450}
+    - Class: 114
+      Script: {instanceID: 85858}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 120
@@ -1428,7 +1437,7 @@ ScriptsOnlyBuild:
     className: VolumeProfile
   - hash:
       serializedVersion: 2
-      Hash: 72724a61ebdb21693d56e657404b6ea8
+      Hash: 7fd36bacc084dcb1ab7108c8316f08db
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: NetworkConnect
@@ -3550,6 +3559,18 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 4b26f454fd088f75ae57d1846bbca61c
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: NetworkAddressSetter
+  - hash:
+      serializedVersion: 2
+      Hash: 181d1d8e49b6af159651f2234419cefb
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: NetworkAddressSetter_2
   platform: 19
   scenePathNames:
   - Assets/Scenes/VRScene_Seungwoo.unity
