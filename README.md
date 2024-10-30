@@ -56,13 +56,13 @@
 
 ### 5. 팀 소개
   * 이종민
-    * Email: jomgminlee@naver.com
+    * Email: jomgminlee@gmail.com
     * 기기 간 네트워크 연결 및 세팅(Netcode)
     * 1:1 의사소통 기법 구현(미니맵, 마커)
     * UI 디자인 및 최적화
     * 음성 채팅 구현(Vivox)
   * 노윤정
-    * Email: roghkcool@naver.com
+    * Email: roghkcool@gmail.com
     * VR 작동 환경 구현
     * 가상환경 속 상호작용 구현
     * 가상환경 수정 및 보완(벽, 바닥, 계단 등)
