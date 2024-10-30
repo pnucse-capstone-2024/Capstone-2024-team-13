@@ -13,28 +13,31 @@
 
 > 시스템은 기본적으로 서버 역할을 하는 PC 감독관과 클라이언트 역할의 VR 체험자로 이루어져 있다.
 
- ![시스템구성도PC](https://github.com/user-attachments/assets/dab159a3-b42f-42dc-a197-3eeb8eb7d6f8)
+ ![시스템구성도VR](https://github.com/user-attachments/assets/ff25a19f-4df9-44d4-b7ac-6acd5da58c82)
+> 먼저 VR 체험자의 경우 VR 장비를 통해 접속한다. 이후 첫 UI를 통해 VR 체험자 버튼을 선택하게 되면 감독관의 IP를 입력하는 화면으로 넘어간다. 감독관으로부터 IP를 받아 붙여 놓은 후 시작버튼을 누르면 대기화면으로 들어감과 동시에 서버의 연결을 기다린다. 이후 감독관이 접속하여 서버를 생성하면 클라이언트로 접속하게 되고 감독관이 체험자의 환경 세팅을 끝내고 나면 VR 체험이 시작된다.
 
-> 먼저 VR 체험자의 경우 VR 장비를 통해 접속한다. 이후 첫 UI를 통해 VR 체험자 버튼을 선택하게 되면 대기화면으로 들어감과 동시에 서버의 연결을 기다린다. 이후 감독관이 접속하여 서버를 생성하면 클라이언트로 접속하게 되고 감독관이 체험자의 환경 세팅을 끝내고 나면 VR 체험이 시작된다.
-
- ![시스템구성도VR](https://github.com/user-attachments/assets/b705509a-dd45-4f1a-bd1d-e53c78a7eb1e)
  
+![시스템구성도PC](https://github.com/user-attachments/assets/dab159a3-b42f-42dc-a197-3eeb8eb7d6f8)
 > PC 감독관의 경우는 개인 Laptop을 통해 접속한다. 이후 첫 UI에서 PC 감독관 버튼을 선택하게 되면 서버가 시작되고 체험자 환경 세팅 화면으로 진입한다. 세팅 화면에서는 체험자가 접속하면 세팅이 동작하며 세팅이 끝나고 시작 버튼을 누르면 VR 체험자도 체험을 시작하고, 실시간 모니터링을 시작한다.
 
 #### 2.2. 사용 기술
-> * 개발 도구: Unity 2022.3.35f1, Netcode for GameObjects, XRInteraction Toolkit, Visual Studio 2022 Community
+> * 개발 도구: Unity 2022.3.35f1, Netcode for GameObjects 1.9.1, XRInteraction Toolkit 2.5.4, Visual Studio 2022 Community
 > * 프로그램 언어: C#
 > * 버전 관리: Unity Version Control
 
 
 ### 3. 설치 및 사용 방법
-> 1. 2개의 PC에서 실행파일 폴더내의 "graduation project2.exe" 파일을 각각 다운로드 후 실행.
+1. 2개의 PC에서 각각 실행파일 폴더를 다운로드 받고 폴더 내의 "graduation project2.exe" 파일을 실행한다.
 
 ![시작화면](https://github.com/user-attachments/assets/1aa145e8-3cea-4cb7-a7c0-e27a6700453d) 
-> 2. 시작 화면에서 한 PC에서는 VR체험자로, 다른 PC에서는 PC감독관으로 접속.
+2. 시작 화면에서 한 PC에서는 PC감독관으로, 다른 PC에서는 VR체험자로 접속한다.
+
+![ip입력](https://github.com/user-attachments/assets/6e5c48fe-6899-4aec-9ef4-aefba2167c37)
+![ipconfig](https://github.com/user-attachments/assets/42c50b3d-0faa-40a2-b13c-ab7b25f5045f)
+3. VR체험자의 경우 ip입력창으로 넘어간다. 여기서 PC감독관은 명령 프롬프트에서 ipconfig를 입력하여 IPv4 주소를 얻고 체험자에게 전달한다. 이후 감독관에게 받은 ip를 붙여 넣어주고 시작버튼을 눌러 대기화면으로 넘어간다.
 
 ![세팅화면](https://github.com/user-attachments/assets/dc3fc507-4f95-4a74-bd28-00bc865986bc)
-> 3. 감독관 화면에서 플레이어 세팅이 끝나고 시작을 누르면 VR체험자의 화면이 바뀌며 시뮬레이션 시작.
+4. 감독관은 접속 후 세팅화면에서 플레이어 세팅을 하고 시작을 누르면 VR체험자의 화면이 바뀌며 시뮬레이션을 시작한다.
 
 
 ### 4. 소개 및 시연 영상
