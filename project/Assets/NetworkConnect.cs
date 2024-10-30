@@ -69,7 +69,6 @@ public class NetworkConnect : NetworkBehaviour
         {
             networkObject.ChangeOwnership(clientId); // 클라이언트에게 소유권 전환
         }
-
         //SetCameraForClient(clientId, netObj.NetworkObjectId);
         // 캔버스 비활성화 및 카메라 설정
     }
@@ -132,6 +131,7 @@ public class NetworkConnect : NetworkBehaviour
         // PC 설정 캔버스 활성화 및 StartCanvas 비활성화
         StartCanvas.SetActive(false);
         SettingCanvas.SetActive(true);
+        
 
         // PC 플레이어를 생성하고 네트워크 객체로 스폰
         // GameObject pcCamera = Instantiate(PCManager);

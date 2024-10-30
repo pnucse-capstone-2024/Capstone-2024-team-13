@@ -83,17 +83,8 @@ public class PlayerSpawnPlace : NetworkBehaviour
     [ServerRpc(RequireOwnership = false)]
     private void TeleportServerRpc(Vector3 newPosition)
     {
-        // 서버에서 위치 변경 후 클라이언트에게 알림
-        /*Transform leftController = XROrigin.transform.Find("Left Controller");
-        Transform rightController = XROrigin.transform.Find("Right Controller");
-        leftController.GetComponent<XRController>().enabled = false;
-        rightController.GetComponent<XRController>().enabled = false;*/
-
         XROrigin.transform.position = newPosition;
         netObj.transform.position = newPosition;        
-
-        /*leftController.GetComponent<XRController>().enabled = true;
-        rightController.GetComponent<XRController>().enabled = true;*/
 
         RequestPositionChangeClientRpc(newPosition);
     }
@@ -103,16 +94,9 @@ public class PlayerSpawnPlace : NetworkBehaviour
     {
         if (!IsOwner)
         {
-            /*Transform leftController = XROrigin.transform.Find("Left Controller");
-            Transform rightController = XROrigin.transform.Find("Right Controller");
-            leftController.GetComponent<XRController>().enabled = false;
-            rightController.GetComponent<XRController>().enabled = false;
-            */
             XROrigin.transform.position = newPosition;
             netObj.transform.position = newPosition;
-            /*
-            leftController.GetComponent<XRController>().enabled = true;
-            rightController.GetComponent<XRController>().enabled = true;*/
+
             Debug.Log("Successfully teleported on client");
         }
     }

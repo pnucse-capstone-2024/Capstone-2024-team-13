@@ -21,6 +21,8 @@ ScriptsOnlyBuild:
     - VrPlayerViewCameraController
     - XROriginManager
     - debugtest
+    - playerchase
+    - vrtestbutton
     ChatChannelSample.dll:
     - AudioDeviceSettings
     - AudioTapsManager
@@ -28,9 +30,6 @@ ScriptsOnlyBuild:
     - LoginScreenUI
     - MainMenuOptions
     - VivoxVoiceManager
-    Unity.InputSystem:
-    - UnityEngine.InputSystem.InputActionAsset
-    - UnityEngine.InputSystem.InputActionReference
     Unity.InputSystem.dll:
     - UnityEngine.InputSystem.InputActionAsset
     - UnityEngine.InputSystem.InputActionReference
@@ -82,25 +81,21 @@ ScriptsOnlyBuild:
     - UnityEngine.Rendering.UI.DebugUIHandlerVector3
     - UnityEngine.Rendering.UI.DebugUIHandlerVector4
     - UnityEngine.Rendering.UI.UIFoldout
-    Unity.RenderPipelines.Core.Runtime.dll:
-    - UnityEngine.Rendering.Volume
-    - UnityEngine.Rendering.VolumeProfile
     Unity.RenderPipelines.Universal.Editor.dll:
     - UnityEditor.Rendering.Universal.UniversalProjectSettings
     Unity.RenderPipelines.Universal.Runtime.dll:
-    - UnityEngine.Rendering.Universal.Bloom
     - UnityEngine.Rendering.Universal.PostProcessData
     - UnityEngine.Rendering.Universal.ScreenSpaceAmbientOcclusion
-    - UnityEngine.Rendering.Universal.Tonemapping
     - UnityEngine.Rendering.Universal.UniversalAdditionalCameraData
     - UnityEngine.Rendering.Universal.UniversalAdditionalLightData
     - UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset
     - UnityEngine.Rendering.Universal.UniversalRenderPipelineGlobalSettings
     - UnityEngine.Rendering.Universal.UniversalRendererData
-    - UnityEngine.Rendering.Universal.Vignette
     - UnityEngine.Rendering.Universal.XRSystemData
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
+    Unity.ShaderGraph.Editor.dll:
+    - UnityEditor.ShaderGraph.ShaderGraphProjectSettings
     Unity.TextMeshPro:
     - TMPro.TMP_FontAsset
     - TMPro.TMP_Settings
@@ -112,27 +107,15 @@ ScriptsOnlyBuild:
     Unity.XR.CoreUtils.dll:
     - Unity.XR.CoreUtils.XROrigin
     Unity.XR.Interaction.Toolkit:
-    - UnityEngine.XR.Interaction.Toolkit.Inputs.Simulation.Hands.HandExpressionCapture
-    - UnityEngine.XR.Interaction.Toolkit.Inputs.Simulation.XRDeviceSimulator
     - UnityEngine.XR.Interaction.Toolkit.Inputs.Simulation.XRDeviceSimulatorSettings
     - UnityEngine.XR.Interaction.Toolkit.InteractionLayerSettings
     Unity.XR.Interaction.Toolkit.Editor.dll:
     - UnityEditor.XR.Interaction.Toolkit.XRInteractionEditorSettings
-    Unity.XR.Interaction.Toolkit.Samples.DeviceSimulator:
-    - UnityEngine.XR.Interaction.Toolkit.Samples.DeviceSimulator.XRDeviceSimulatorControllerUI
-    - UnityEngine.XR.Interaction.Toolkit.Samples.DeviceSimulator.XRDeviceSimulatorHandsUI
-    - UnityEngine.XR.Interaction.Toolkit.Samples.DeviceSimulator.XRDeviceSimulatorUI
-    Unity.XR.Interaction.Toolkit.Samples.DeviceSimulator.dll:
-    - UnityEngine.XR.Interaction.Toolkit.Samples.DeviceSimulator.XRDeviceSimulatorControllerUI
-    - UnityEngine.XR.Interaction.Toolkit.Samples.DeviceSimulator.XRDeviceSimulatorHandsUI
-    - UnityEngine.XR.Interaction.Toolkit.Samples.DeviceSimulator.XRDeviceSimulatorUI
     Unity.XR.Interaction.Toolkit.dll:
     - UnityEngine.XR.Interaction.Toolkit.ActionBasedContinuousMoveProvider
     - UnityEngine.XR.Interaction.Toolkit.ActionBasedController
     - UnityEngine.XR.Interaction.Toolkit.ActionBasedSnapTurnProvider
     - UnityEngine.XR.Interaction.Toolkit.Inputs.InputActionManager
-    - UnityEngine.XR.Interaction.Toolkit.Inputs.Simulation.Hands.HandExpressionCapture
-    - UnityEngine.XR.Interaction.Toolkit.Inputs.Simulation.XRDeviceSimulator
     - UnityEngine.XR.Interaction.Toolkit.Inputs.Simulation.XRDeviceSimulatorSettings
     - UnityEngine.XR.Interaction.Toolkit.InteractionLayerSettings
     - UnityEngine.XR.Interaction.Toolkit.LocomotionSystem
@@ -185,7 +168,6 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Slider
     - UnityEngine.UI.Text
     - UnityEngine.UI.Toggle
-    - UnityEngine.UI.VerticalLayoutGroup
   serializedClasses:
     Unity.InputSystem:
     - UnityEngine.InputSystem.InputAction
@@ -201,25 +183,14 @@ ScriptsOnlyBuild:
     - Unity.Netcode.Transports.UTP.UnityTransport/ConnectionAddressData
     - Unity.Netcode.Transports.UTP.UnityTransport/SimulatorParameters
     Unity.RenderPipelines.Core.Runtime:
-    - UnityEngine.Rendering.BoolParameter
-    - UnityEngine.Rendering.ClampedFloatParameter
-    - UnityEngine.Rendering.ClampedIntParameter
-    - UnityEngine.Rendering.ColorParameter
-    - UnityEngine.Rendering.MinFloatParameter
-    - UnityEngine.Rendering.TextureParameter
     - UnityEngine.Rendering.UI.DebugUIPrefabBundle
-    - UnityEngine.Rendering.Vector2Parameter
     Unity.RenderPipelines.Universal.Runtime:
-    - UnityEngine.Rendering.Universal.DownscaleParameter
-    - UnityEngine.Rendering.Universal.HDRACESPresetParameter
-    - UnityEngine.Rendering.Universal.NeutralRangeReductionModeParameter
     - UnityEngine.Rendering.Universal.PostProcessData/ShaderResources
     - UnityEngine.Rendering.Universal.PostProcessData/TextureResources
     - UnityEngine.Rendering.Universal.ScreenSpaceAmbientOcclusionSettings
     - UnityEngine.Rendering.Universal.ScriptableRendererData/DebugShaderResources
     - UnityEngine.Rendering.Universal.StencilStateData
     - UnityEngine.Rendering.Universal.TemporalAA/Settings
-    - UnityEngine.Rendering.Universal.TonemappingModeParameter
     - UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset/TextureResources
     - UnityEngine.Rendering.Universal.UniversalRendererData/ShaderResources
     - UnityEngine.Rendering.Universal.XRSystemData/ShaderResources
@@ -245,7 +216,6 @@ ScriptsOnlyBuild:
     - UnityEngine.XR.Interaction.Toolkit.FocusExitEvent
     - UnityEngine.XR.Interaction.Toolkit.HoverEnterEvent
     - UnityEngine.XR.Interaction.Toolkit.HoverExitEvent
-    - UnityEngine.XR.Interaction.Toolkit.Inputs.Simulation.XRDeviceSimulator/SimulatedHandExpression
     - UnityEngine.XR.Interaction.Toolkit.InteractionLayerMask
     - UnityEngine.XR.Interaction.Toolkit.SelectEnterEvent
     - UnityEngine.XR.Interaction.Toolkit.SelectExitEvent
@@ -253,13 +223,10 @@ ScriptsOnlyBuild:
     - UnityEngine.XR.Interaction.Toolkit.UI.UIHoverExitEvent
     - UnityEngine.XR.Interaction.Toolkit.XRInteractableEvent
     - UnityEngine.XR.Interaction.Toolkit.XRInteractorEvent
-    Unity.XR.Interaction.Toolkit.Samples.DeviceSimulator:
-    - UnityEngine.XR.Interaction.Toolkit.Samples.DeviceSimulator.XRDeviceSimulatorHandsUI/HandExpressionUI
     UnityEngine.CoreModule:
     - UnityEngine.Events.ArgumentCache
     - UnityEngine.Events.PersistentCallGroup
     - UnityEngine.Events.PersistentListenerMode
-    - UnityEngine.Pose
     - UnityEngine.RectOffset
     UnityEngine.TextCoreFontEngineModule:
     - UnityEngine.TextCore.FaceInfo
@@ -287,6 +254,9 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.SpriteState
     - UnityEngine.UI.Toggle/ToggleEvent
   methodsToPreserve:
+  - assembly: Assembly-CSharp
+    fullTypeName: vrtestbutton
+    methodName: testbutton
   - assembly: Assembly-CSharp
     fullTypeName: NetworkConnect
     methodName: OKButton
@@ -461,8 +431,6 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 19102}
     - Class: 114
-      Script: {instanceID: 19174}
-    - Class: 114
       Script: {instanceID: 19204}
     - Class: 114
       Script: {instanceID: 19404}
@@ -474,10 +442,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 19806}
     - Class: 114
       Script: {instanceID: 20148}
-    - Class: 114
-      Script: {instanceID: 20202}
-    - Class: 114
-      Script: {instanceID: 21150}
     - Class: 114
       Script: {instanceID: 21168}
     - Class: 114
@@ -513,149 +477,139 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 22808}
     - Class: 114
-      Script: {instanceID: 23140}
+      Script: {instanceID: 23078}
     - Class: 114
-      Script: {instanceID: 23152}
+      Script: {instanceID: 23142}
     - Class: 114
-      Script: {instanceID: 23214}
+      Script: {instanceID: 23154}
     - Class: 114
-      Script: {instanceID: 23426}
+      Script: {instanceID: 23216}
     - Class: 114
-      Script: {instanceID: 23530}
+      Script: {instanceID: 23428}
     - Class: 114
-      Script: {instanceID: 23786}
+      Script: {instanceID: 23532}
     - Class: 114
-      Script: {instanceID: 23920}
+      Script: {instanceID: 23788}
     - Class: 114
-      Script: {instanceID: 23948}
+      Script: {instanceID: 23922}
     - Class: 114
-      Script: {instanceID: 24286}
+      Script: {instanceID: 23950}
     - Class: 114
-      Script: {instanceID: 24338}
+      Script: {instanceID: 24288}
     - Class: 114
-      Script: {instanceID: 24396}
+      Script: {instanceID: 24340}
     - Class: 114
-      Script: {instanceID: 24436}
+      Script: {instanceID: 24438}
     - Class: 114
-      Script: {instanceID: 24504}
+      Script: {instanceID: 24516}
     - Class: 114
-      Script: {instanceID: 24514}
+      Script: {instanceID: 24934}
     - Class: 114
-      Script: {instanceID: 24932}
+      Script: {instanceID: 25124}
     - Class: 114
-      Script: {instanceID: 25122}
+      Script: {instanceID: 25164}
     - Class: 114
-      Script: {instanceID: 25162}
+      Script: {instanceID: 25256}
     - Class: 114
-      Script: {instanceID: 25254}
+      Script: {instanceID: 25290}
     - Class: 114
-      Script: {instanceID: 25288}
+      Script: {instanceID: 25644}
     - Class: 114
-      Script: {instanceID: 25642}
+      Script: {instanceID: 25708}
     - Class: 114
-      Script: {instanceID: 25706}
+      Script: {instanceID: 25728}
     - Class: 114
-      Script: {instanceID: 25726}
+      Script: {instanceID: 25814}
     - Class: 114
-      Script: {instanceID: 25812}
+      Script: {instanceID: 25932}
     - Class: 114
-      Script: {instanceID: 25930}
+      Script: {instanceID: 25970}
     - Class: 114
-      Script: {instanceID: 26186}
+      Script: {instanceID: 26190}
     - Class: 114
-      Script: {instanceID: 26262}
+      Script: {instanceID: 26266}
     - Class: 114
-      Script: {instanceID: 26390}
+      Script: {instanceID: 26410}
     - Class: 114
-      Script: {instanceID: 26406}
+      Script: {instanceID: 26428}
     - Class: 114
-      Script: {instanceID: 26424}
+      Script: {instanceID: 26926}
     - Class: 114
-      Script: {instanceID: 26878}
+      Script: {instanceID: 27278}
     - Class: 114
-      Script: {instanceID: 26922}
+      Script: {instanceID: 27360}
     - Class: 114
-      Script: {instanceID: 27274}
-    - Class: 114
-      Script: {instanceID: 27356}
-    - Class: 114
-      Script: {instanceID: 27452}
-    - Class: 114
-      Script: {instanceID: 27612}
+      Script: {instanceID: 27456}
     - Class: 114
       Script: {instanceID: 27616}
     - Class: 114
-      Script: {instanceID: 27734}
+      Script: {instanceID: 27620}
     - Class: 114
-      Script: {instanceID: 27802}
+      Script: {instanceID: 27738}
     - Class: 114
-      Script: {instanceID: 27944}
+      Script: {instanceID: 27806}
     - Class: 114
-      Script: {instanceID: 28098}
+      Script: {instanceID: 27948}
     - Class: 114
-      Script: {instanceID: 28130}
+      Script: {instanceID: 28102}
     - Class: 114
-      Script: {instanceID: 28280}
+      Script: {instanceID: 28134}
     - Class: 114
-      Script: {instanceID: 28336}
+      Script: {instanceID: 28284}
     - Class: 114
-      Script: {instanceID: 28386}
+      Script: {instanceID: 28340}
     - Class: 114
-      Script: {instanceID: 28568}
+      Script: {instanceID: 28390}
     - Class: 114
-      Script: {instanceID: 28588}
+      Script: {instanceID: 28592}
     - Class: 114
-      Script: {instanceID: 28812}
+      Script: {instanceID: 28816}
     - Class: 114
-      Script: {instanceID: 29134}
+      Script: {instanceID: 29242}
     - Class: 114
-      Script: {instanceID: 29238}
+      Script: {instanceID: 29272}
     - Class: 114
-      Script: {instanceID: 29268}
+      Script: {instanceID: 29336}
     - Class: 114
-      Script: {instanceID: 29332}
+      Script: {instanceID: 29598}
     - Class: 114
-      Script: {instanceID: 29594}
+      Script: {instanceID: 29948}
     - Class: 114
-      Script: {instanceID: 29944}
+      Script: {instanceID: 29954}
     - Class: 114
-      Script: {instanceID: 29950}
+      Script: {instanceID: 30190}
     - Class: 114
-      Script: {instanceID: 30186}
+      Script: {instanceID: 30354}
     - Class: 114
-      Script: {instanceID: 30350}
+      Script: {instanceID: 30548}
     - Class: 114
-      Script: {instanceID: 30544}
+      Script: {instanceID: 30634}
     - Class: 114
-      Script: {instanceID: 30630}
+      Script: {instanceID: 30660}
     - Class: 114
-      Script: {instanceID: 30656}
+      Script: {instanceID: 30680}
     - Class: 114
-      Script: {instanceID: 30676}
+      Script: {instanceID: 30796}
     - Class: 114
-      Script: {instanceID: 30792}
+      Script: {instanceID: 30802}
     - Class: 114
-      Script: {instanceID: 30798}
+      Script: {instanceID: 30978}
     - Class: 114
-      Script: {instanceID: 30974}
+      Script: {instanceID: 31030}
     - Class: 114
-      Script: {instanceID: 31026}
+      Script: {instanceID: 31174}
     - Class: 114
-      Script: {instanceID: 31170}
+      Script: {instanceID: 31538}
     - Class: 114
-      Script: {instanceID: 31534}
+      Script: {instanceID: 31898}
     - Class: 114
-      Script: {instanceID: 31554}
+      Script: {instanceID: 31924}
     - Class: 114
-      Script: {instanceID: 31894}
+      Script: {instanceID: 32368}
     - Class: 114
-      Script: {instanceID: 31920}
+      Script: {instanceID: 32644}
     - Class: 114
-      Script: {instanceID: 32364}
-    - Class: 114
-      Script: {instanceID: 32640}
-    - Class: 114
-      Script: {instanceID: 32724}
+      Script: {instanceID: 32728}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 120
@@ -687,8 +641,6 @@ ScriptsOnlyBuild:
     - Class: 223
       Script: {instanceID: 0}
     - Class: 224
-      Script: {instanceID: 0}
-    - Class: 225
       Script: {instanceID: 0}
     - Class: 241
       Script: {instanceID: 0}
@@ -1065,7 +1017,7 @@ ScriptsOnlyBuild:
     className: CustomRigBuilderEvaluator
   - hash:
       serializedVersion: 2
-      Hash: b2a0db2b31a1afb3afe8c545b1bce479
+      Hash: c0f51f11938e3c0476c46b3e0fad5c2a
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: VrPlayerViewCameraController
@@ -1425,7 +1377,7 @@ ScriptsOnlyBuild:
     className: VolumeProfile
   - hash:
       serializedVersion: 2
-      Hash: 240c11bca4990c22161339ea006f0483
+      Hash: 72724a61ebdb21693d56e657404b6ea8
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: NetworkConnect
@@ -1765,6 +1717,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: PlayerSpawnTarget
+  - hash:
+      serializedVersion: 2
+      Hash: 7fe2cdaab2ccfbf0a8e5e7d57cfffbfa
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: vrtestbutton
   - hash:
       serializedVersion: 2
       Hash: f669be52680c88846b2093fd41d1e06e
@@ -2335,6 +2293,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.XR.Interaction.Toolkit
     namespaceName: UnityEngine.XR.Interaction.Toolkit.AffordanceSystem.Receiver.UI
     className: ImageColorAffordanceReceiver
+  - hash:
+      serializedVersion: 2
+      Hash: 12349918cf7068b3ab39990a10e40627
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: playerchase
   - hash:
       serializedVersion: 2
       Hash: 583254a1619dbe3cde701bf77653e297
@@ -3532,4 +3496,4 @@ ScriptsOnlyBuild:
   platform: 13
   scenePathNames:
   - Assets/Scenes/VRScene_Seungwoo.unity
-  playerPath: "C:/Users/tmddn/OneDrive/\uBC14\uD0D5 \uD654\uBA74/unity\uC548\uB4DC\uB85C\uC774\uB4DC\uC2E4\uD589/123.apk"
+  playerPath: "C:/Users/tmddn/OneDrive/\uBC14\uD0D5 \uD654\uBA74/unity\uC548\uB4DC\uB85C\uC774\uB4DC\uC2E4\uD589/test.apk"
